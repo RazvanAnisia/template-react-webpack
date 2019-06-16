@@ -1,5 +1,5 @@
 ## Description
-React has 2 parts:
+React has 2 parts:<br>
 -React - main library<br>
 -React DOM - before v0.14 it was all included in React
 
@@ -35,7 +35,7 @@ Finally we will add 2 scripts to the package.json,
 one to run the dev server one to build it into the dist folder.
 
 ## Breaking changes because of babel v7, had to run these commands and use this config for babel
-`npm i @babel/core @babel/preset-env @babel/preset-react -D`
-Inside of .babelrc:
+`npm i @babel/core @babel/preset-env @babel/preset-react -D` <br>
+Inside of .babelrc:<br>
 `.babelrc file -> {
 "presets": ["@babel/preset-env", "@babel/preset-react"]}`
