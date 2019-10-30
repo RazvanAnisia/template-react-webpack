@@ -5,6 +5,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 //entry file -
 //output = where our compiled code will go(bundle)
 module.exports = {
+  watchOptions: {
+    aggregateTimeout: 600
+  },
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "dist"),
@@ -14,8 +17,8 @@ module.exports = {
   module: {
     rules: [
         {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader'],
+            test:/\.(s*)css$/i,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
           },
       {
         //using this regExp we are looking for anything that is a js file

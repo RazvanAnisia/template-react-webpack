@@ -1,0 +1,15 @@
+$themeColor-Light: #f3e2c7;
+$themeColor-Dark:#b68d4c;
+$dark:#f34565;
+#app {
+    width:500px;
+    height:500px;
+    background:$themeColor-Dark;
+    .winner {
+        color:red
+    }
+}
+
+body {
+    background:$themeColor-Light;
+}
